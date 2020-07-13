@@ -1,0 +1,19 @@
+<table>
+	<tr>
+		<td>Student Number</td>
+		<td>First Name</td>
+		<td>Surname</td>
+		<td>ID Number</td>
+		<td>Place of Residence</td>
+	</tr>
+	{{#each students}}
+	<tr>
+		<td>{{student_id}}</td>
+		<td>{{fname}}</td>
+		<td>{{sname}}</td>
+		<td>{{id}}</td>
+		<td>{{residence}}</td>
+	</tr>
+	{{/each}}
+</table><br><br>
+<form method="get" action="/"><input type="submit" name="home" value="Back"></form>
